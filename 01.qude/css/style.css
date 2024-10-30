@@ -3,7 +3,7 @@
 /* 00. font - 구글폰트에서 Montserrat 300/400/600 가져옴 */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&family=Noto+Sans+KR&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=BIZ+UDPGothic&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
 /* 00. Reset */
 * {
     margin: 0;
@@ -94,7 +94,7 @@ img {
 }
 
 body {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif, 'Pretendard JP';
     font-size: 16px;
     letter-spacing: -0.01em;
 }
@@ -186,7 +186,53 @@ header .menuBox.on li:nth-child(2) a {
 }
 header .menuBox.on li:nth-child(3) a {
     transition-delay: 0.1s;
+    font-family: 'Pretendard JP';
+    font-weight: 500;
 }
 header .menuBox.on li:nth-child(4) a {
     transition-delay: 0.15s;
+}
+/* visual */
+.visual {
+}
+.visual .inner {
+    display: grid;
+    height: 100vh;
+    padding: 25px 50px 25px;
+    box-sizing: border-box;
+    grid-template-rows: auto 1fr auto;
+}
+.visual .inner .mainText {
+    max-width: fit-content;
+    font-weight: normal;
+    font-size: 80px;
+    margin-left: auto;
+    line-height: 0.9;
+    letter-spacing: -2px;
+}
+.visual .inner .mainText span {
+    display: block;
+    overflow: hidden;
+}
+.visual .inner .mainText span i {
+    display: block;
+}
+.visual .inner .subText {
+    font-weight: normal;
+    font-size: 20px;
+    align-self: flex-end;
+    margin-bottom: 50px;
+}
+.visual .inner .subText span {
+    color: #585858;
+}
+.visual .logoWrap {
+    display: flex;
+    justify-content: space-between;
+}
+.visual .logoWrap span {
+    width: 16%;
+}
+.visual .logoWrap span img {
+    width: 100%;
 }
