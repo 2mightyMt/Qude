@@ -194,6 +194,7 @@ header .menuBox.on li:nth-child(4) a {
 }
 /* visual */
 .visual {
+    margin-bottom: 0;
 }
 .visual .inner {
     display: grid;
@@ -235,4 +236,147 @@ header .menuBox.on li:nth-child(4) a {
 }
 .visual .logoWrap span img {
     width: 100%;
+}
+
+section {
+    margin-bottom: 150px;
+}
+.inner {
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+.box {
+    border-radius: 10px;
+    overflow: hidden;
+}
+.btn {
+    font-size: 11px;
+    padding: 12px 25px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    display: inline-block;
+    background: #fff;
+    color: #000;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+/* con1 */
+.con1 .box {
+    padding: 60px;
+    background-color: rgba(55, 55, 55, 0.4);
+    backdrop-filter: blur(100px);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 90px;
+}
+.con1 .box .mainText {
+    font-size: 30px;
+    grid-row-start: 2;
+}
+.con1 .box .subText {
+    max-width: 500px;
+    font-size: 20px;
+    grid-column-start: 2;
+}
+.con1 .box .subText p {
+    margin-top: 14px;
+}
+.con1 .textAni {
+    margin-top: 14px;
+    position: relative;
+}
+
+.con1 .textAni::before {
+    content: '';
+    width: 110px;
+    height: 110px;
+    border-radius: 100%;
+    background: #e36840;
+    position: absolute;
+    right: 0;
+    top: 0;
+    animation: opa linear 1.5s 0s infinite;
+}
+@keyframes opa {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.con1 .textAni ul {
+    display: grid;
+    max-width: 800px;
+}
+.con1 .textAni ul li {
+    font-size: 65px;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    transform: translateX(30px);
+    opacity: 0;
+}
+/* con2 */
+.con2 .inner {
+    position: relative;
+    padding: 40px 50px;
+}
+.con2 .inner::before {
+    content: '';
+    width: 95%;
+    height: 1px;
+    background: #3b3b3b;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+}
+.con2 .mainTextBox {
+    position: relative;
+}
+.con2 .mainTextBox span {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.con2 .mainTextBox .in {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 15px;
+}
+.con2 .mainTextBox .in .box {
+    max-width: 550px;
+    margin-right: 20px;
+}
+.con2 .mainTextBox .in .box video {
+    width: 100%;
+}
+.con2 .mainTextBox .title {
+    font-size: 120px;
+    line-height: 1;
+    letter-spacing: -5px;
+    text-align: right;
+    overflow: hidden;
+}
+.con2 .mainTextBox .title i {
+    display: block;
+}
+.con2 .mainTextBox .title.a {
+    align-self: flex-end;
+}
+.con2 .mainTextBox .title.b {
+    margin-right: 400px;
+}
+.con2 .subTextBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 }
