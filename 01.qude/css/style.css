@@ -380,3 +380,21 @@ section {
     justify-content: space-between;
     align-items: flex-end;
 }
+.con2 .subTextBox .subText {
+    max-width: 600px;
+    font-size: 22px;
+}
+.con2 .subTextBox .subText p:nth-child(1) {
+    margin-bottom: 20px;
+}
+.con2 .subTextBox .iconbox {
+    display: flex;
+}
+.con2 .subTextBox .iconbox li {
+    width: 28px;
+    margin: 0 10px;
+    place-items: center;
+}
+.con2 .subTextBox .iconbox li:last-child {
+    width: 40px;
+}
